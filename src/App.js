@@ -4,11 +4,6 @@ import {useState} from 'react';
 const App = () => {
 
 const [viewMode, setViewMode] = useState("compact");
-// const changeViewMode = () => {
-//   if(view === "compact") setView("detailed");
-//   if(view === "detailed") setView("compact");
-// }
-
 
 return (
   <div className="App">
