@@ -1,11 +1,6 @@
 import User from "./components/user/User";
-import {useState} from 'react';
 
-const App = () => {
-
-const [viewMode, setViewMode] = useState("compact");
-
-return (
+const App = () => (
   <div className="App">
       <User 
         userData = {{
@@ -13,11 +8,9 @@ return (
           nickname: "John Biden",
           lastOnline: "05-02-2022 18:00:00"
         }} 
-        viewMode = {viewMode}
-        changeViewMode = {setViewMode}
+        viewMode = "compact"
       />
   </div>
 );
-}
 
 export default App;
