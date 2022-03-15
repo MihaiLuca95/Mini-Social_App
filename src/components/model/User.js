@@ -10,6 +10,7 @@ class User {
   static get() {
     return fetch('/data/user.json')
       .then(response => response.json())
+      .then(data => new User(data.nickname, data.avatar, data.lastOnline));
   }
   // static get(cb) {
   // fetch('/data/user.json')

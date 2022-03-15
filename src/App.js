@@ -13,8 +13,7 @@ const App = () => {
     //   setUser(userObject) 
     //   console.log(user);
     // })
-    UserModel.get().then(data => {
-      let userObject = new UserModel(data.nickname, data.avatar, data.lastOnline)
+    UserModel.get().then(userObject => {
       setUser(userObject) 
     })
   }, [])
